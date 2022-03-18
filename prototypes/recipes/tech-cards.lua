@@ -104,7 +104,7 @@ return {
   {
     type = "recipe",
     name = "singularity-tech-card",
-    category = "t3-tech-cards",
+    category = "kr-singularity",
     energy_required = 20,
     enabled = false,
     allow_productivity = true,
@@ -113,7 +113,10 @@ return {
       { "charged-matter-stabilizer", 5 },
       { "ai-core", 5 },
     },
-    result = "singularity-tech-card",
-    result_count = 5,
+    results = {
+      { "singularity-tech-card", 5 },
+      { type = "item", name = "matter-stabilizer", amount = 5, probability = 0.9 },
+    },
+    main_product = "singularity-tech-card",
   },
 }
