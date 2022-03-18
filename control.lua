@@ -18,6 +18,7 @@ local planetary_teleporter = require("scripts.planetary-teleporter")
 local radioactivity = require("scripts.radioactivity")
 local roboport = require("scripts.roboport")
 local shelter = require("scripts.shelter")
+local singularity_generator = require("scripts.singularity-generator")
 local tesla_coil = require("scripts.tesla-coil")
 local util = require("scripts.util")
 local virus = require("scripts.virus")
@@ -49,6 +50,7 @@ event.on_init(function()
   radioactivity.init()
   roboport.init()
   shelter.init()
+  singularity_generator.init()
   tesla_coil.init()
   virus.init()
 
@@ -106,6 +108,8 @@ event.register({
     planetary_teleporter.build(entity, e.tags)
   elseif entity_name == "kr-shelter-container" or entity_name == "kr-shelter-plus-container" then
     shelter.build(entity)
+  elseif entity_name == "kr-singularity-assembler" or entity_name == "kr-singularity-generator" then
+    singularity_generator.build(entity)
   elseif entity_name == "kr-tesla-coil" then
     tesla_coil.build(entity)
   elseif entity_name == "offshore-pump" then
@@ -145,6 +149,8 @@ event.register({
     intergalactic_transceiver.destroy_inactive(entity)
   elseif entity_name == "kr-shelter-container" or entity_name == "kr-shelter-plus-container" then
     shelter.destroy(entity)
+  elseif entity_name == "kr-singularity-assembler" or entity_name == "kr-singularity-generator" then
+    singularity_generator.destroy(entity)
   elseif entity_name == "kr-planetary-teleporter" then
     planetary_teleporter.destroy(entity)
   elseif entity_name == "kr-tesla-coil" then

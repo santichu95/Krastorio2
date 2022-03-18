@@ -12,6 +12,7 @@ local planetary_teleporter = require("scripts.planetary-teleporter")
 local radioactivity = require("scripts.radioactivity")
 local roboport = require("scripts.roboport")
 local shelter = require("scripts.shelter")
+local singularity_generator = require("scripts.singularity-generator")
 local tesla_coil = require("scripts.tesla-coil")
 local util = require("scripts.util")
 local virus = require("scripts.virus")
@@ -240,6 +241,7 @@ migrations.versions = {
   end,
   ["1.3.0"] = function()
     energy_absorber.init()
+    singularity_generator.init()
     if game.finished or game.finished_but_continuing then
       for _, force in pairs(game.forces) do
         force.technologies["kr-logo"].enabled = true
