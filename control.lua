@@ -386,6 +386,7 @@ event.on_tick(function()
   planetary_teleporter.update_gui_statuses()
   planetary_teleporter.update_all_destination_availability()
   radioactivity.update_sounds()
+  singularity_generator.tick()
   virus.iterate()
 
   local tasks = on_tick_n.retrieve(game.tick)

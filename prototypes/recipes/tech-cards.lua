@@ -110,12 +110,12 @@ return {
     allow_productivity = true,
     ingredients = {
       { "blank-tech-card", 15 },
-      { "charged-matter-stabilizer", 5 },
+      { type = "item", name = "charged-matter-stabilizer", amount = 5, catalyst_amount = 5 },
       { "ai-core", 5 },
     },
     results = {
       { "singularity-tech-card", 5 },
-      { type = "item", name = "matter-stabilizer", amount = 5, probability = 0.9 },
+      { type = "item", name = "matter-stabilizer", amount = 5, probability = 0.9, catalyst_amount = 5 },
     },
     main_product = "singularity-tech-card",
   },

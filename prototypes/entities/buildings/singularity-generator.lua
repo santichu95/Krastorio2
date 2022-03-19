@@ -9,7 +9,7 @@ data:extend({
     icon = "__Krastorio2Assets__/icons/entities/intergalactic-transceiver.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    flags = { "not-selectable-in-game", "not-rotatable", "placeable-neutral", "placeable-player", "player-creation" },
+    flags = { "not-selectable-in-game", "not-rotatable" },
     max_health = 350,
     impact_category = "metal",
     fluid_boxes = {
@@ -182,6 +182,7 @@ data:extend({
     icon_mipmaps = 4,
     flags = { "not-rotatable", "placeable-neutral", "placeable-player", "player-creation" },
     minable = { mining_time = 0.2, result = "kr-singularity-generator" },
+    placeable_by = { item = "kr-singularity-generator", count = 1 },
     max_health = 350,
     impact_category = "metal",
     -- alert_icon_shift = util.by_pixel(-3, -12),
@@ -199,7 +200,7 @@ data:extend({
     close_sound = sounds.machine_close,
 
     crafting_categories = { "kr-singularity" },
-    crafting_speed = 2,
+    crafting_speed = 5,
     energy_source = { type = "void" },
     energy_usage = "1W",
     module_specification = { module_slots = 4 },

@@ -68,4 +68,9 @@ function singularity_generator.destroy(entity)
   end
 end
 
+function singularity_generator.tick()
+  for _, data in pairs(global.singularity_generator.assembler) do
+  end
+end
+
 return singularity_generator
