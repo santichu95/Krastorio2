@@ -23,7 +23,7 @@ data:extend({
       },
       time = 20,
     },
-     -- Disable cost multiplier to avoid manually harvesting unreasonable amount of wood.
+    -- Disable cost multiplier to avoid manually harvesting unreasonable amount of wood.
     ignore_tech_cost_multiplier = not krastorio.general.getSafeSettingValue("kr-tech-multiplier-everywhere"),
   },
   {
@@ -95,7 +95,7 @@ data:extend({
       },
       time = 30,
     },
-     -- Disable cost multiplier to avoid manually harvesting unreasonable amount of wood.
+    -- Disable cost multiplier to avoid manually harvesting unreasonable amount of wood.
     ignore_tech_cost_multiplier = not krastorio.general.getSafeSettingValue("kr-tech-multiplier-everywhere"),
   },
   ---
@@ -553,28 +553,6 @@ data:extend({
         { "utility-science-pack", 1 },
         { "matter-tech-card", 1 },
         { "advanced-tech-card", 1 },
-      },
-      time = 60,
-    },
-  },
-  {
-    type = "technology",
-    name = "kr-matter-cube",
-    mod = "Krastorio2",
-    icon = kr_technologies_icons_path .. "matter-cube.png",
-    icon_size = 256,
-    icon_mipmaps = 4,
-    prerequisites = { "kr-singularity-tech-card" },
-    order = "g-f-z",
-    unit = {
-      count = 500,
-      ingredients = {
-        { "production-science-pack", 1 },
-        { "utility-science-pack", 1 },
-        { "space-science-pack", 1 },
-        { "matter-tech-card", 1 },
-        { "advanced-tech-card", 1 },
-        { "singularity-tech-card", 1 },
       },
       time = 60,
     },

@@ -82,7 +82,6 @@ if kr_stack_size_value and kr_stack_size_value ~= "No changes" then
   data.raw.item["lithium-sulfur-battery"].stack_size = kr_stack_size_value
   data.raw.item["ai-core"].stack_size = kr_stack_size_value
   data.raw.item["tritium"].stack_size = kr_stack_size_value
-  data.raw.item["matter-cube"].stack_size = kr_stack_size_value
   data.raw.item["inserter-parts"].stack_size = kr_stack_size_value
 
   data.raw.item["matter-stabilizer"].stack_size = kr_stack_size_value * 0.5

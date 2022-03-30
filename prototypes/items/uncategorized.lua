@@ -124,7 +124,12 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     pictures = {
-      { size = 64, filename = kr_items_with_variations_icons_path .. "sand/sand.png", scale = 0.25, mipmap_count = 4 },
+      {
+        size = 64,
+        filename = kr_items_with_variations_icons_path .. "sand/sand.png",
+        scale = 0.25,
+        mipmap_count = 4,
+      },
       {
         size = 64,
         filename = kr_items_with_variations_icons_path .. "sand/sand-1.png",
@@ -276,7 +281,12 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     pictures = {
-      { size = 64, filename = kr_items_with_variations_icons_path .. "coke/coke.png", scale = 0.25, mipmap_count = 4 },
+      {
+        size = 64,
+        filename = kr_items_with_variations_icons_path .. "coke/coke.png",
+        scale = 0.25,
+        mipmap_count = 4,
+      },
       {
         size = 64,
         filename = kr_items_with_variations_icons_path .. "coke/coke-1.png",
@@ -1083,16 +1093,6 @@ data:extend({
     subgroup = "intermediate-product",
     order = "w1[matter-stabilizers]-a2[charged-matter-stabilizer]",
     stack_size = 100,
-  },
-  {
-    type = "item",
-    name = "matter-cube",
-    icon = kr_items_icons_path .. "matter-cube.png",
-    icon_size = 64,
-    icon_mipmaps = 4,
-    subgroup = "intermediate-product",
-    order = "000[matter]-000[matter-cube]",
-    stack_size = 200,
   },
   {
     type = "item",

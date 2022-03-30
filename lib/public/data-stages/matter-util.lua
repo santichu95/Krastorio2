@@ -218,7 +218,6 @@ function krastorio.matter_func.removeAllKrastorioMatterRecipes()
   krastorio.matter_func.removeMatterRecipe("steel-plate")
   krastorio.matter_func.removeMatterRecipe("plastic-bar")
   krastorio.matter_func.removeMatterRecipe("biomass")
-  krastorio.matter_func.removeMatterRecipe("matter-cube")
 end
 
 -- -- -- KRASTORIO ONLY (Use it if you know what you are doing)
@@ -495,17 +494,6 @@ function krastorio.matter_func.createStandardKrastorioMatterRecipes()
     unlocked_by_technology = "kr-matter-oil-processing",
   }
   krastorio.matter_func.createMatterRecipe(plastic_bar)
-
-  -- matter cube
-  local matter_cube = {
-    item_name = "matter-cube",
-    minimum_conversion_quantity = 1,
-    matter_value = 1000,
-    energy_required = 15,
-    need_stabilizer = true,
-    unlocked_by_technology = "kr-matter-cube",
-  }
-  krastorio.matter_func.createMatterRecipe(matter_cube)
 end
 
 -- Remove all matter recipe, and recreate the Krastorio matter recipes
