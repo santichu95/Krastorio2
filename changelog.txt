@@ -12,7 +12,10 @@ Date: ????
     - Creep will be restricted to Nauvis only if Space Exploration is enabled (#252)
     - Moved tree and rock recipes from intermediate products to environment group
     - Removed "efficient fabrication" technology and the lithium electronic components recipe
+    - Removed matter cubes
     - Removed the setting to disable the substation mk2
+    - Renamed "matter assembler" to "matter reassociator" and "matter plant" to "matter disassociator"
+    - Renamed "matter" to "disassociated matter"
     - Replaced /kr-enable-nauvis-creep and /kr-disable-nauvis-creep with /kr-set-creep-on-surface
     - Updated translations from Crowdin
   Balancing:
