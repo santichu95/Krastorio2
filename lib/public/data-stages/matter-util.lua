@@ -51,7 +51,7 @@ function krastorio.matter_func.createMatterRecipe(args)
 
     local _energy_required = args.energy_required or 2
 
-    local _technology = args.unlocked_by_technology or "kr-matter-processing"
+    local _technology = args.unlocked_by_technology or "kr-matter-disassociation"
 
     if args.only_deconversion == nil or args.only_deconversion ~= true then
       local item_to_matter = {

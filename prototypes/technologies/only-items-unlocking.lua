@@ -295,7 +295,7 @@ data:extend({
         recipe = krastorio.recipes.changed_names["matter-tech-card"] or "matter-tech-card",
       },
     },
-    prerequisites = { "kr-singularity-lab" },
+    prerequisites = { "kr-singularity-lab", "kr-matter-disassociation" },
     unit = {
       count = 750,
       ingredients = {
@@ -350,13 +350,12 @@ data:extend({
         recipe = krastorio.recipes.changed_names["energy-control-unit"] or "energy-control-unit",
       },
     },
-    prerequisites = { "kr-singularity-lab", "kr-lithium-sulfur-battery", "kr-matter-tech-card" },
+    prerequisites = { "kr-quarry-minerals-extraction", "kr-lithium-sulfur-battery" },
     unit = {
       count = 350,
       ingredients = {
         { "production-science-pack", 1 },
         { "utility-science-pack", 1 },
-        { "matter-tech-card", 1 },
       },
       time = 30,
     },
@@ -382,13 +381,12 @@ data:extend({
         recipe = krastorio.recipes.changed_names["imersium-beam"] or "imersium-beam",
       },
     },
-    prerequisites = { "kr-matter-tech-card" },
+    prerequisites = { "kr-quarry-minerals-extraction", "utility-science-pack" },
     unit = {
       count = 500,
       ingredients = {
         { "production-science-pack", 1 },
         { "utility-science-pack", 1 },
-        { "matter-tech-card", 1 },
       },
       time = 60,
     },
@@ -480,7 +478,7 @@ data:extend({
         recipe = krastorio.recipes.changed_names["singularity-tech-card"] or "singularity-tech-card",
       },
     },
-    prerequisites = { "kr-advanced-tech-card", "kr-matter-processing" },
+    prerequisites = { "kr-advanced-tech-card", "kr-matter-disassociation" },
     unit = {
       count = 1250,
       ingredients = {

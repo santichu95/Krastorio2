@@ -170,7 +170,7 @@ data:extend({
     order = "j",
     trigger = {
       type = "research",
-      technology = "kr-matter-processing",
+      technology = "kr-matter-disassociation",
     },
     category = "kr-about-k2",
     indent = 1,

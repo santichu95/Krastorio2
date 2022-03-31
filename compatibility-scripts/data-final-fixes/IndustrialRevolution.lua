@@ -798,7 +798,7 @@ if mods["IndustrialRevolution"] then
         icon_size = 256,
         icon_mipmaps = 4,
         effects = {},
-        prerequisites = { "kr-matter-processing" },
+        prerequisites = { "kr-matter-disassociation" },
         order = "g-e-e",
         unit = {
           count = 350,
