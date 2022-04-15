@@ -9,9 +9,11 @@ Date: ????
     - Mineral water will be made infinite if "Finite oil" setting is disabled (#240)
   Changes:
     - Adjusted Intergalactic Transceiver night lighting to be more purple
+    - Creep will be restricted to Nauvis only if Space Exploration is enabled (#252)
     - Moved tree and rock recipes from intermediate products to environment group
     - Removed "efficient fabrication" technology and the lithium electronic components recipe
     - Removed the setting to disable the substation mk2
+    - Replaced /kr-enable-nauvis-creep and /kr-disable-nauvis-creep with /kr-set-creep-on-surface
     - Updated translations from Crowdin
   Balancing:
     - Creep collection range is based on your reach distance, but cannot be collected if there are enemies nearby (#239)
@@ -21,7 +23,9 @@ Date: ????
     - [Space Exploration] The Deep Space Loader will match the belt color of the deep space belt it is connected to (#115)
   Bugfixes:
     - Fixed inaccurate max consumption for the energy absorber (#249)
+    - Fixed that biomass would not show in selection lists until after researching bioprocessing (#255)
     - Fixed that coke liquefaction had different fluid output locations than coke liquefaction (#250)
+    - Fixed that Editor Extensions linked belts would be flipped when placed
     - Fixed that tesla coils would not leave a ghost when destroyed (#248)
     - Fixed that the tesla coil collision entity could be destroyed by turrets (#247)
     - Fixed that you would be spammed with error messages when dragging an energy absorber in a grid (#245)
