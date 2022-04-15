@@ -172,6 +172,8 @@ data:extend({
     allowed_effects = {},
 
     show_recipe_icon = false,
+
+    bottleneck_ignore = true,
   },
   {
     type = "assembling-machine",

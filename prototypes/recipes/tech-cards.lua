@@ -103,6 +103,21 @@ return {
   },
   {
     type = "recipe",
+    name = "singularity-research-data",
+    category = "kr-singularity",
+    energy_required = 20,
+    enabled = false,
+    allow_productivity = true,
+    ingredients = {
+      { type = "item", name = "ai-core", amount = 5, catalyst_amount = 5 },
+    },
+    results = {
+      { "singularity-research-data", 1 },
+    },
+    main_product = "singularity-research-data",
+  },
+  {
+    type = "recipe",
     name = "singularity-tech-card",
     category = "kr-singularity",
     energy_required = 20,
