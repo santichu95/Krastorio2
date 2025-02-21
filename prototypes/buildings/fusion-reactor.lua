@@ -24,7 +24,7 @@ data:extend({
     stack_size = 1,
   },
   {
-    type = "assembling-machine",
+    type = "fusion-reactor",
     name = "kr-fusion-reactor",
     icon = "__Krastorio2Assets__/icons/entities/fusion-reactor.png",
     flags = { "placeable-neutral", "placeable-player", "player-creation" },
@@ -39,34 +39,35 @@ data:extend({
     },
     collision_box = { { -7.25, -7.25 }, { 7.25, 7.25 } },
     selection_box = { { -7.5, -7.5 }, { 7.5, 7.5 } },
-    fixed_recipe = "kr-fusion",
-    show_recipe_icon = false,
-    crafting_speed = 1,
-    crafting_categories = { "nuclear-fusion" },
-    source_inventory_size = 0,
-    result_inventory_size = 1,
-    fluid_boxes = {
-      {
+    input_fluid_box = {
         production_type = "input",
         pipe_covers = pipecoverspictures(),
         pipe_picture = require("prototypes.buildings.pipe-picture"),
         volume = 1000,
+        filter = "water",
         pipe_connections = { { flow_direction = "input", direction = defines.direction.south, position = { 0, 7 } } },
-      },
-      {
+    },
+    output_fluid_box = {
         production_type = "output",
         pipe_covers = pipecoverspictures(),
         pipe_picture = require("prototypes.buildings.pipe-picture"),
         volume = 100000,
+        filter = "steam",
         pipe_connections = { { flow_direction = "output", direction = defines.direction.north, position = { 0, -7 } } },
-      },
     },
     energy_source = {
       type = "electric",
       usage_priority = "secondary-input",
       emissions_per_minute = { pollution = 5 },
     },
-    energy_usage = "483.4MW",
+    burner = {
+      type = "burner",
+      fuel_categories = {"fusion-fuel"},
+      fuel_inventory_size = 0,
+      burnt_inventory_size = 1,
+    },
+    power_input = "483.4MW",
+    max_fluid_usage = 1,
     open_sound = { filename = "__Krastorio2Assets__/sounds/buildings/open.ogg", volume = 1 },
     close_sound = { filename = "__Krastorio2Assets__/sounds/buildings/close.ogg", volume = 0.85 },
     vehicle_impact_sound = { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
@@ -79,6 +80,7 @@ data:extend({
       idle_sound = { filename = "__base__/sound/idle1.ogg" },
     },
     graphics_set = {
+      plasma_category = "fusion-reactor-steam",
       animation = {
         layers = {
           {
